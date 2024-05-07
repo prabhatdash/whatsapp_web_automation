@@ -9,9 +9,9 @@ for i in range(0,20):
     phone="+91"+str(sample)
     message =""
     pywhatkit.sendwhatmsg_instantly(phone, message)
-    pyautogui.click(1050, 950)
-    time.sleep(5)
+    time.sleep(7)
+    pyautogui.click(1050, 870, clicks=2)
     k.press_and_release('enter')
-    time.sleep(2)
+    time.sleep(5)
     k.press_and_release('cmd+w')
     print("MESSAGE SENT TO: ",phone)
